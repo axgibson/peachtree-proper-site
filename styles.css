@@ -49,7 +49,7 @@ nav a {
 
 /* Hero Section */
 .hero {
-  background: url('/assets/hero-background.png') no-repeat center center/cover;
+  background: url('assets/hero-background.png') no-repeat center center/cover;
   height: 100vh;
   position: relative;
   display: flex;
@@ -58,27 +58,21 @@ nav a {
   padding: 0 4rem;
 }
 
-.hero::before {
-  content: "";
-  position: absolute;
-  top: 0; left: 0; right: 0; bottom: 0;
-  background: rgba(255, 255, 255, 0.4); /* less opacity for better image visibility */
-  z-index: 0;
-}
-
 .hero-content {
   z-index: 1;
   max-width: 600px;
-  color: var(--charcoal);
-  text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.6);
+  color: rgb(245, 237, 237); /* change to white for contrast */
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6); /* subtle shadow for readability */
+  font-family: var(--font-body);
 }
 
 .hero-content h1 {
   font-size: 3rem;
-  font-weight: bold;
-  font-family: var(--font-heading);
+  font-weight: 800;
+  font-family: var(--font-body); /* use sans-serif here too */
   margin-bottom: 1rem;
 }
+
 
 .hero-content p {
   font-size: 1.2rem;
@@ -86,8 +80,8 @@ nav a {
 }
 
 .btn {
-  background: var(--charcoal);
-  color: white;
+  background: white;
+  color: var(--charcoal);
   padding: 1rem 2rem;
   border-radius: 8px;
   font-weight: bold;
@@ -96,8 +90,9 @@ nav a {
 }
 
 .btn:hover {
-  background: #000;
+  background: #ddd;
 }
+
 
 /* Footer */
 footer {
